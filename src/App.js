@@ -1,30 +1,22 @@
 import React from 'react';
 import {connect} from 'react-redux'
-import {fetchTrips} from './actions/fetchTrips'
+import TripsContainer from './containers/TripsContainer'
+//import {fetchTrips} from './actions/fetchTrips'
 //import logo from './logo.svg';
 import './App.css';
 
 class App extends React.Component {
 
-  componentDidMount(){
-    // fetch('http://localhost:3000/api/v1/trips', {
-    //   method: 'GET'
-    // })
-    // .then(response => response.json())
-    // .then(data =>console.log(data))
-    this.props.fetchTrips({type: 'FETCH_TRIPS', payload: {name: 'England/Ireland Trip'}})
-  }
-
   render() {
     return (
       <div className="App">
-        App
+        <TripsContainer/>
       </div>
     );
   }
 }
 
-export default connect(null, {fetchTrips})(App);
+export default App;
 
 
 
