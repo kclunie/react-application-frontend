@@ -18,6 +18,10 @@ class TripInput extends React.Component{
     handleSubmit = (event) => {
         event.preventDefault()
         this.props.addTrip(this.state)
+        this.setState({
+            name: '',
+            date: ''
+        })
     }
 
     render(){
