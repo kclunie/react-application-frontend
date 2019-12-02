@@ -1,4 +1,6 @@
 import React from 'react'
+//import {Redirect} from 'react-router-dom'
+import CitiesContainer from '../containers/CitiesContainer'
 
 const Trip = (props) => {
     console.log(props)
@@ -7,9 +9,12 @@ const Trip = (props) => {
     console.log(trip)
 
     return (
-        <li>
+        <div>
+        <h2>
             {trip ? trip.name : null} - {trip ? trip.date : null}
-        </li>
+        </h2>
+        <CitiesContainer trip={trip}/>
+        </div>
     )
 }
 
