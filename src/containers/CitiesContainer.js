@@ -9,7 +9,7 @@ class CitiesContainer extends React.Component{
             <div>
                 CitiesContainer
                 <CityInput/>
-                <Cities trips={this.props.trip && this.props.trip.cities}/>
+                <Cities cities={this.props.trip && this.props.trip.cities}/>
             </div>
         )
     }
