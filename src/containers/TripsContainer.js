@@ -5,6 +5,7 @@ import {fetchTrips} from '../actions/fetchTrips'
 import Trip from '../components/Trip'
 import Trips from '../components/Trips'
 import TripInput from '../components/TripInput'
+import NavBar from '../components/NavBar'
 
 class TripsContainer extends React.Component{
 
@@ -16,6 +17,7 @@ class TripsContainer extends React.Component{
         return(
             <div>
                 TripsContainer
+               <NavBar/>
                 <Switch>
                 <Route path='/trips/new' component={TripInput}/>
                 <Route path='/trips/:id' render={(routerProps) => <Trip {...routerProps} trips={this.props.trips}/>}/>
