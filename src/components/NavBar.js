@@ -5,6 +5,7 @@ const NavBar = () =>{
     return(
      <div className="NavBar">
          WhereInTheWorld  |  
+         <NavLink to="/">Home  |  </NavLink>
          <NavLink to="/trips">My Trips  |  </NavLink>
          <NavLink to="/trips/new"> New Trip  |  </NavLink>
      </div>   
