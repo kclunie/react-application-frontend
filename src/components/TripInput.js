@@ -1,6 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {addTrip} from '../actions/addTrip'
+import Button from 'react-bootstrap/Button';
 
 class TripInput extends React.Component{
 
@@ -34,6 +35,8 @@ class TripInput extends React.Component{
                     <label>Date:</label>
                     <input type='text' placeholder='Date' value={this.state.date} name="date" onChange={this.handleChange}/><br/>
                     <input type="submit"/>
+                    <Button variant="warning">Warning</Button>
+                    <Button type="submit" variant="warning">Submit2</Button>
                 </form>
             </div>
         )
