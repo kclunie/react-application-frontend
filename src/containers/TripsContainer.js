@@ -6,6 +6,7 @@ import Trip from '../components/Trip'
 import Trips from '../components/Trips'
 import TripInput from '../components/TripInput'
 import NavBar from '../components/NavBar'
+import Home from '../components/Home'
 
 class TripsContainer extends React.Component{
 
@@ -19,6 +20,7 @@ class TripsContainer extends React.Component{
                 TripsContainer
                <NavBar/>
                 <Switch>
+                <Route exact path='/' component={Home}/>   
                 <Route path='/trips/new' component={TripInput}/>
                 <Route path='/trips/:id' render={(routerProps) => <Trip {...routerProps} trips={this.props.trips}/>}/>
                 <Route exact path='/trips' render={(routerProps) => <Trips {...routerProps} trips={this.props.trips}/>}/>
