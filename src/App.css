@@ -24,5 +24,20 @@
 .NavBar {
   display: flex;
   flex-direction:row;  
-  color: red;
+  color: green;
+}
+
+.HomeQuote {
+  font-style: italic;
+  /*font-weight: bold; */
+}
+
+.CitiesExplored {
+  text-decoration: underline;
+}
+
+.Image {
+  height: 400px;
+  width: 70%;
+  /*background-color: powderblue; */
 }

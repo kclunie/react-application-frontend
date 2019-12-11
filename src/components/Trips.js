@@ -6,8 +6,9 @@ const Trips = (props) => {
 
     return(
         <div>
-            Trips
-
+            <br></br>
+            <h2>My Trips</h2>
+            <br></br>
             {props.trips.map(trip => 
             <li key={trip.id}>
                 <Link to={`/trips/${trip.id}`}>{trip.name}</Link>
