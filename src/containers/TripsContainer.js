@@ -17,7 +17,6 @@ class TripsContainer extends React.Component{
     render(){
         return(
             <div>
-                TripsContainer
                <NavBar/>
                 <Switch>
                 <Route exact path='/' component={Home}/>   

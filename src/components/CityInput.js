@@ -36,7 +36,7 @@ class CityInput extends React.Component{
         return(
             <div>
                <br></br>
-                <h4>Add a City</h4>
+                <h4>Add a Trip Destination</h4>
                 <form onSubmit={this.handleSubmit}>
                     <Form.Group as={Row}>
                     <Form.Label column sm="2">Location:</Form.Label>
