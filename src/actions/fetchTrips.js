@@ -11,5 +11,4 @@ export function fetchTrips(){
 
     }
   
-   // this.props.fetchTrips({type: 'FETCH_TRIPS', payload: {name: 'England/Ireland Trip'}})
 }

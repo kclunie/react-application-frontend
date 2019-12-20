@@ -8,7 +8,6 @@ const Cities = (props) => {
     console.log(props.cities)
 
     const handleDelete = (city) => {
-        //debugger;
         props.deleteCity(city.id, city.trip_id)
     }
 

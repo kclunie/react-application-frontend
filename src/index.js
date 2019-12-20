@@ -7,7 +7,6 @@ import { Provider } from 'react-redux'
 import {BrowserRouter as Router} from 'react-router-dom'
 import tripReducer from './reducers/tripReducer'
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 import App from './App';
 //import * as serviceWorker from './serviceWorker';
 

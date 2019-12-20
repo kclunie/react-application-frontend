@@ -1,6 +1,5 @@
 import React from 'react'
-import {Route, Link} from 'react-router-dom'
-import Trip from './Trip'
+import {Link} from 'react-router-dom'
 
 const Trips = (props) => {
 

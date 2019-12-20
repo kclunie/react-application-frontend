@@ -1,8 +1,5 @@
 import React from 'react';
-import {connect} from 'react-redux'
 import TripsContainer from './containers/TripsContainer'
-//import {fetchTrips} from './actions/fetchTrips'
-//import logo from './logo.svg';
 import './App.css';
 
 class App extends React.Component {
@@ -21,6 +18,33 @@ export default App;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//import {connect} from 'react-redux'
+//import {fetchTrips} from './actions/fetchTrips'
+//import logo from './logo.svg';
 
 // function App() {
 //   return (
