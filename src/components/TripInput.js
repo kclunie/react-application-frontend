@@ -57,4 +57,11 @@ class TripInput extends React.Component{
     }
 }
 
+// const mapStateToProps = state => {
+//    // debugger;
+//     return{
+//         trips: state.trips
+//     }
+// }
+
 export default connect(null, {addTrip})(TripInput)
