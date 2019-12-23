@@ -14,6 +14,8 @@ const TripInput2 = ({formData, updateNewTripForm, addTrip, history}) => {
     }
 
     const handleSubmit = event => {
+        console.log(formData)
+        console.log(event)
         event.preventDefault()
         addTrip(formData)
     }
@@ -42,7 +44,7 @@ const TripInput2 = ({formData, updateNewTripForm, addTrip, history}) => {
 
 const mapStateToProps = state => {
     return {
-     formData: state.tripInput2
+     formData: state.tripReducer
     }
 }
 

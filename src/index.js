@@ -13,7 +13,7 @@ import App from './App';
 
 const reducer = combineReducers({
     tripReducer,
-    tripInput2
+    //tripInput2
 })
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;

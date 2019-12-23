@@ -9,9 +9,9 @@ export const updateNewTripForm = (name, value) => {
 }
 
 export const addTrip = trip =>{
-    console.log("addtripdata is", trip)
+    console.log("action", trip)
     return {
         type: "ADD_TRIP",
-        payload: trip
+        trip
     }
 }
