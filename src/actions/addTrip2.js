@@ -7,3 +7,11 @@ export const updateNewTripForm = (name, value) => {
         formData: { name, value }
     }
 }
+
+export const addTrip = trip =>{
+    console.log("addtripdata is", trip)
+    return {
+        type: "ADD_TRIP",
+        payload: trip
+    }
+}

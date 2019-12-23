@@ -4,6 +4,13 @@ export default function tripReducer (state = {trips: []}, action) {
             return {trips: action.payload}
         case 'ADD_TRIP':
             return {...state, trips: [...state.trips, action.payload]}
+        case "UPDATE_NEW_TRIP_FORM":
+            const returnVal =  {
+             ...state,
+                [action.formData.name]: action.formData.value
+            }
+            console.log("returnval is", returnVal)
+            return returnVal
         case 'ADD_CITY':
             let trips = state.trips.map(trip => {
                 if (trip.id === action.payload.id){
