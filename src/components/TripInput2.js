@@ -21,6 +21,7 @@ const TripInput2 = ({formData, updateNewTripForm, addTrip, history}) => {
     }
 
     return (
+        <div>
         <form onSubmit={handleSubmit}>
             <input
             placeholder="name"
@@ -39,6 +40,7 @@ const TripInput2 = ({formData, updateNewTripForm, addTrip, history}) => {
             value="Create Trip"
             />
         </form>
+        </div>
     )
 };
 

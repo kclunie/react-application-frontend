@@ -9,10 +9,10 @@ export default function tripReducer (state = {trips: []}, action) {
             }
             console.log("returnval is", returnVal)
             return returnVal
-            case 'ADD_TRIP':
+        case 'ADD_TRIP':
                 console.log("reducer", action.trip)
-                //return {...state, trips: [...state.trips, action.payload]}
-                return state.trips.concat(action.trip)
+                return {...state, trips: [...state.trips, action.payload]}
+                //return state.trips.concat(action.trip)
         case 'ADD_CITY':
             let trips = state.trips.map(trip => {
                 if (trip.id === action.payload.id){
