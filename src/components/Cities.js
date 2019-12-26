@@ -15,7 +15,9 @@ const Cities = (props) => {
         console.log('b')
     }
 
-  
+  const handleClick = () => {
+    console.log("you have liked this trip")
+  }
 
     return(
         <div>
@@ -23,7 +25,9 @@ const Cities = (props) => {
             <h3 className="CitiesExplored">Cities Explored</h3>
             <br></br>
             {props.cities && props.cities.map(city =>
-            <City city={city} handleDelete={handleDelete}/>
+            <div key={city.id}>
+            <City city={city} handleDelete={handleDelete} handleClick={handleClick}/>
+            </div>
             )}
            
 
