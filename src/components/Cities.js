@@ -17,6 +17,9 @@ const Cities = (props) => {
 
   const handleClick = () => {
     console.log("you have liked this trip")
+    let element = document.querySelector(".like");
+    element.innerHTML = 'Liked!!!';
+    element.style.backgroundColor = 'red';
   }
 
     return(
