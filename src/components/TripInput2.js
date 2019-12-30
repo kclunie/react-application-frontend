@@ -7,8 +7,11 @@ import {connect} from 'react-redux'
 const TripInput2 = ({formData, updateNewTripForm, addTrip, history}) => {
 
     const { name, date } = formData
+    console.log(name, date)
+    console.log(formData)
 
     const handleChange = event => {
+        console.log(event.target)
         const { name, value } = event.target
         updateNewTripForm(name, value)
     }
@@ -45,6 +48,7 @@ const TripInput2 = ({formData, updateNewTripForm, addTrip, history}) => {
 };
 
 const mapStateToProps = state => {
+    console.log(state)
     return {
      formData: state.tripReducer
     }

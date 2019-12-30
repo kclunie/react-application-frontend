@@ -4,7 +4,7 @@ import CitiesContainer from '../containers/CitiesContainer'
 const Trip = (props) => {
     console.log(props)
 
-    let trip = props.trips.filter(trip => trip.id == props.match.params.id)[0]
+    let trip = props.trips.find(trip => trip.id == props.match.params.id)
     console.log(trip)
 
     return (

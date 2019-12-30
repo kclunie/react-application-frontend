@@ -32,6 +32,7 @@ class TripsContainer extends React.Component{
 }
 
 const mapStateToProps = state => {
+    console.log(state)
     console.log("global state in mapstate to props ", state.tripReducer.trips)
     return{
         trips: state.tripReducer.trips
