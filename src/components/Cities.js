@@ -25,15 +25,7 @@ import City from './City'
 
   class Cities extends React.Component{
 
-    state = {
-        like: false
-    }
 
-    toggleShow = () => {
-        this.setState({
-            like: !this.state.like
-        })
-    }
 
     handleDelete = (city) => {
               console.log('a')
@@ -50,7 +42,7 @@ import City from './City'
             <br></br>
             {this.props.cities && this.props.cities.map(city =>
             <div key={city.id}>
-            <City city={city} handleDelete={this.handleDelete} handleClick={this.handleClick} onClick={this.toggleShow} like={this.state.like}/>
+            <City city={city} handleDelete={this.handleDelete} handleClick={this.handleClick}/>
             </div>
             )}
            

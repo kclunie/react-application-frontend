@@ -7,6 +7,7 @@ const Trip = (props) => {
     let trip = props.trips.find(trip => trip.id == props.match.params.id)
     console.log(trip)
 
+    
     return (
         <div>
         <h2>
