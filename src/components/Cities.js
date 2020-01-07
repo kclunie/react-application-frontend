@@ -42,7 +42,7 @@ import City from './City'
             <br></br>
             {this.props.cities && this.props.cities.map(city =>
             <div key={city.id}>
-            <City city={city} handleDelete={this.handleDelete} handleClick={this.handleClick}/>
+            <City city={city} handleDelete={this.handleDelete}/>
             </div>
             )}
            

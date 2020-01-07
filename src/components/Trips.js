@@ -19,7 +19,7 @@ class Trips extends React.Component{
         <div>
             <br></br>
             <h2>My Trips</h2>
-            <input type="text" name="search" value={this.state.name} onInput={(event) => this.updateSearch(event)}></input>
+            <input type="text" name="search" value={this.state.name} onInput={(event) => this.updateSearch(event)}  placeholder="Search"></input>
             <br></br>
             {filteredTrips.map(trip => 
             <li key={trip.id}>
