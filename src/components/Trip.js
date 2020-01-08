@@ -2,10 +2,10 @@ import React from 'react'
 import CitiesContainer from '../containers/CitiesContainer'
 
 const Trip = (props) => {
-    console.log(props)
+    console.log("trip component props are", props)
 
     let trip = props.trips.find(trip => trip.id == props.match.params.id)
-    console.log(trip)
+    console.log("trip in trip.js is", trip)
 
     
     return (

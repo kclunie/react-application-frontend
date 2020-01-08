@@ -7,11 +7,12 @@ export default function tripReducer (state = {trips: []}, action) {
              ...state,
                 [action.formData.name]: action.formData.value
             }
-            console.log("returnval is", returnVal)
+            console.log("returnval of UPDATE_TRIP is", returnVal)
             return returnVal
         case 'ADD_TRIP':
-                console.log("reducer", action.trip)
-                return {...state, trips: [...state.trips, action.payload]}
+                console.log("reducer ADD_TRIP trip is", action)
+                //console.log("reducer 2 ADD_TRIP trip is", action.payload)
+                return {...state, trips: [...state.trips, action.trip]}
                 //return state.trips.concat(action.trip)
         case 'ADD_CITY':
             let trips = state.trips.map(trip => {

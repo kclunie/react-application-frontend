@@ -9,8 +9,8 @@ class Trips extends React.Component{
     }
 
    updateSearch = (event) => { 
-   console.log("hello")
-   this.setState({name: event.target.value})
+        console.log("in trips component - updateSearch")
+        this.setState({name: event.target.value})
    }
 
     render(){
@@ -19,7 +19,7 @@ class Trips extends React.Component{
         <div>
             <br></br>
             <h2>My Trips</h2>
-            <input type="text" name="search" value={this.state.name} onInput={(event) => this.updateSearch(event)}  placeholder="Search"></input>
+            <input type="text" name="name" value={this.state.name} onChange={(event) => this.updateSearch(event)}  placeholder="Search"></input>
             <br></br>
             {filteredTrips.map(trip => 
             <li key={trip.id}>

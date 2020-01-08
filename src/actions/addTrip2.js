@@ -1,7 +1,7 @@
 export const updateNewTripForm = (name, value) => {
-    console.log(name, value)
+    console.log("name and value in updateNewTripForm is", name, value)
     const formData = { name, value }
-    console.log(formData)
+    console.log("formData in updateNewTripForm is", formData)
     return {
         type: "UPDATE_NEW_TRIP_FORM",
         formData: { name, value }

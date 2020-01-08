@@ -11,14 +11,14 @@ const TripInput2 = ({formData, updateNewTripForm, addTrip, history}) => {
     console.log(formData)
 
     const handleChange = event => {
-        console.log(event.target)
+        console.log("event.target in TripInput2 is", event.target)
         const { name, value } = event.target
         updateNewTripForm(name, value)
     }
 
     const handleSubmit = event => {
-        console.log(formData)
-        console.log(event)
+        console.log("formData in handleSubmit", formData)
+        console.log("event in handleSubmit", event)
         event.preventDefault()
         addTrip(formData)
     }
@@ -48,7 +48,7 @@ const TripInput2 = ({formData, updateNewTripForm, addTrip, history}) => {
 };
 
 const mapStateToProps = state => {
-    console.log(state)
+    console.log("mapStateToProps in TripInput2 is", state)
     return {
      formData: state.tripReducer
     }
