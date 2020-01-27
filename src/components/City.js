@@ -8,11 +8,11 @@ class City extends React.Component{
         like: false
     }
 
-    toggleShow = () => {
-        this.setState({
-            like: !this.state.like
-        })
-    }
+    // toggleShow = () => {
+    //     this.setState({
+    //         like: !this.state.like
+    //     })
+    // }
 
     // redButton = (e) => {
     //     let heart = e.target
@@ -23,7 +23,7 @@ class City extends React.Component{
 
       handleClick = (e) => {
         console.log("you have liked this trip")
-
+        console.log(this.state.like)
         // let element = document.querySelector(".like");
         // element.innerHTML = 'Liked!!!';
         // element.style.backgroundColor = 'red';
@@ -31,8 +31,9 @@ class City extends React.Component{
         this.setState({
             like: !this.state.like
         })
+        console.log(this.state.like)
 
-        if (this.state.like == true) {
+        if (this.state.like === true) {
         let element = e.target
         element.innerHTML = 'Liked!!!';
         element.style.backgroundColor = 'red';
@@ -42,10 +43,12 @@ class City extends React.Component{
             element.innerHTML = 'Like';
             element.style.backgroundColor = 'black';    
         }
+        console.log(this.state.like)
       
   }
 
     render() {
+        console.log(this.state.like)
     return (
         <div>
     

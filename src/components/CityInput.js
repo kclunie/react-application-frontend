@@ -19,6 +19,7 @@ class CityInput extends React.Component{
         this.setState({
             [event.target.name]: event.target.value
         })
+        console.log("the state now is", this.state)
     }
 
     handleSubmit = (event) => {
