@@ -14,12 +14,20 @@ class City extends React.Component{
     //     })
     // }
 
-    // redButton = (e) => {
-    //     let heart = e.target
-    //     heart.style.color = "red"
-    //     heart.variant= "primary"
-    //     document.getElementById("myH2").style.color = "#ff0000";
-    // }
+    // redButton = () => {
+    //     if (this.state.like === true) {
+    //         document.getElementById("myH2").style.backgroundColor = "#ff0000";
+    //         }
+    //         // else{
+    //         //     document.getElementById("myH2").style.backgroundColor = "black";
+    //         // }
+            
+         
+        //let heart = e.target
+        // heart.style.color = "red"
+        // heart.variant= "primary"
+        // document.getElementById("myH2").style.color = "#ff0000";
+   // }
 
       handleClick = (e) => {
         console.log("you have liked this trip")
@@ -29,13 +37,13 @@ class City extends React.Component{
         // element.style.backgroundColor = 'red';
 
         this.setState({
-            like: !this.state.like
+            like: !(this.state.like)
         })
-        console.log(this.state.like)
+        // console.log(this.state.like)
 
-        if (this.state.like === true) {
+        if (this.state.like === false) {
         let element = e.target
-        element.innerHTML = 'Liked!!!';
+        element.innerHTML = 'LOVE';
         element.style.backgroundColor = 'red';
         }
         else {
@@ -52,15 +60,15 @@ class City extends React.Component{
     return (
         <div>
     
-           <strong>{this.props.city.location}</strong> 
+           <strong>{this.props.city.location}</strong>
             <br></br> Hotel: {this.props.city.hotel}
             <br></br> Restaurants: {this.props.city.restaurants} 
             <br></br> Activities: {this.props.city.activities} 
             <br></br>  
             <Button variant="dark" onClick={() => this.props.handleDelete(this.props.city)}>Delete</Button><br></br><br></br>
             <Button id="myH2" className="like" variant="dark" onClick={(e) => this.handleClick(e)} >Like</Button><br></br><br></br>
-            {this.state.like ? <h1>liked!!</h1> : null}
-            
+            {this.state.like ? <h1>LOVE</h1> : null}
+            {/*this.state.like ? this.redButton() : null*/}
         
         </div>
     )

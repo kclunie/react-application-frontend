@@ -21,8 +21,8 @@ class TripsContainer extends React.Component{
                <NavBar/>
                 <Switch>
                 <Route exact path='/' component={Home}/>   
-                {/*<Route path='/trips/new' component={TripInput}/>*/}
-                <Route path='/trips/new' component={TripInput2}/>
+                <Route path='/trips/new' component={TripInput}/>
+                {/*<Route path='/trips/new' component={TripInput2}/>*/}
                 <Route path='/trips/:id' render={(routerProps) => <Trip {...routerProps} trips={this.props.trips}/>}/>
                 <Route exact path='/trips' render={(routerProps) => <Trips {...routerProps} trips={this.props.trips}/>}/>
                 </Switch>
@@ -32,10 +32,10 @@ class TripsContainer extends React.Component{
 }
 
 const mapStateToProps = state => {
-    console.log("mapStateToProps state is equal to", state)
-    console.log("global state in mapstate to props ", state.tripReducer.trips)
+    //console.log("mapStateToProps state is equal to", state)
+    //console.log("global state in mapstate to props ", state.tripReducer.trips)
     return{
-        trips: state.tripReducer.trips
+        trips: state.trips
     }
 }
 

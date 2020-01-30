@@ -14,6 +14,8 @@ class Trips extends React.Component{
    }
 
     render(){
+        console.log("this.props.trips is", this.props.trips)
+        //debugger
     const filteredTrips = this.props.trips.filter(trip => trip.name.includes(this.state.name))
     return(
         <div>

@@ -22,6 +22,7 @@ class TripInput extends React.Component{
     handleSubmit = (event) => {
         event.preventDefault()
         this.props.addTrip(this.state)
+        console.log("trip added", this.state)
         this.setState({
             name: '',
             date: ''
@@ -57,11 +58,11 @@ class TripInput extends React.Component{
     }
 }
 
-// const mapStateToProps = state => {
-//    // debugger;
-//     return{
-//         trips: state.trips
-//     }
-// }
+const mapStateToProps = state => {
+   // debugger;
+    return{
+        trips: state.trips
+    }
+}
 
-export default connect(null, {addTrip})(TripInput)
+export default connect(mapStateToProps, {addTrip})(TripInput)
