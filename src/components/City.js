@@ -8,39 +8,15 @@ class City extends React.Component{
         like: false
     }
 
-    // toggleShow = () => {
-    //     this.setState({
-    //         like: !this.state.like
-    //     })
-    // }
-
-    // redButton = () => {
-    //     if (this.state.like === true) {
-    //         document.getElementById("myH2").style.backgroundColor = "#ff0000";
-    //         }
-    //         // else{
-    //         //     document.getElementById("myH2").style.backgroundColor = "black";
-    //         // }
-            
-         
-        //let heart = e.target
-        // heart.style.color = "red"
-        // heart.variant= "primary"
-        // document.getElementById("myH2").style.color = "#ff0000";
-   // }
-
       handleClick = (e) => {
         console.log("you have liked this trip")
-        console.log(this.state.like)
-        // let element = document.querySelector(".like");
-        // element.innerHTML = 'Liked!!!';
-        // element.style.backgroundColor = 'red';
+        console.log(this.state.like, "1")
 
         this.setState({
-            like: !(this.state.like)
+            //like: !(this.state.like)
+            [e.target.name]: !(this.state.like)
         })
-        // console.log(this.state.like)
-
+        e.preventDefault()
         if (this.state.like === false) {
         let element = e.target
         element.innerHTML = 'LOVE';
@@ -51,12 +27,11 @@ class City extends React.Component{
             element.innerHTML = 'Like';
             element.style.backgroundColor = 'black';    
         }
-        console.log(this.state.like)
-      
+        console.log(this.state.like, "2")  
   }
 
     render() {
-        console.log(this.state.like)
+        console.log(this.state.like, "3")
     return (
         <div>
     
@@ -66,7 +41,7 @@ class City extends React.Component{
             <br></br> Activities: {this.props.city.activities} 
             <br></br>  
             <Button variant="dark" onClick={() => this.props.handleDelete(this.props.city)}>Delete</Button><br></br><br></br>
-            <Button id="myH2" className="like" variant="dark" onClick={(e) => this.handleClick(e)} >Like</Button><br></br><br></br>
+            <Button id="myH2" className="like" variant="dark" name='like' value={this.state.like} onClick={(e) => this.handleClick(e)} >Like</Button><br></br><br></br>
             {this.state.like ? <h1>LOVE</h1> : null}
             {/*this.state.like ? this.redButton() : null*/}
         
