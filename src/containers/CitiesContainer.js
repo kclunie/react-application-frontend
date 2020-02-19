@@ -1,6 +1,7 @@
 import React from 'react'
 import CityInput from '../components/CityInput'
 import Cities from '../components/Cities'
+import City from '../components/City'
 
 class CitiesContainer extends React.Component{
 
@@ -8,7 +9,8 @@ class CitiesContainer extends React.Component{
         return(
             <div>
                 <CityInput trip={this.props.trip}/>
-                <Cities cities={this.props.trip && this.props.trip.cities}/>
+                <Cities cities={this.props.trip && this.props.trip.cities} trip={this.props.trip}/>
+              
             </div>
         )
     }

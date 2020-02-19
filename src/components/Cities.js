@@ -25,8 +25,6 @@ import City from './City'
 
   class Cities extends React.Component{
 
-
-
     handleDelete = (city) => {
               console.log('a')
               this.props.deleteCity(city.id, city.trip_id)
@@ -34,7 +32,6 @@ import City from './City'
           }
    
     render() {
-
     return(
         <div>
             <br></br><br></br>
@@ -45,8 +42,6 @@ import City from './City'
             <City city={city} handleDelete={this.handleDelete}/>
             </div>
             )}
-           
-
         </div>
     )
 }

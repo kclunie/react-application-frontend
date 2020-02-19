@@ -1,5 +1,7 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button';
+import {connect} from 'react-redux'
+import {addLike} from '../actions/addLike'
 
 //const City = (props) => {
 class City extends React.Component{
@@ -7,6 +9,14 @@ class City extends React.Component{
     state = {
         like: false
     }
+
+    // constructor() {
+    //     super();
+    //     this.state = {
+    //       like: false
+    //     };
+    //     this.handleClick = this.handleClick.bind(this);
+    //   } 
 
       handleClick = (e) => {
         console.log("you have liked this trip")
@@ -17,6 +27,7 @@ class City extends React.Component{
             [e.target.name]: !(this.state.like)
         })
         e.preventDefault()
+        this.props.addLike(this.state, this.props.city.trip_id)
         if (this.state.like === false) {
         let element = e.target
         element.innerHTML = 'LOVE';
@@ -50,5 +61,6 @@ class City extends React.Component{
 }
 }
 
-export default City
+//export default City
+export default connect(null, {addLike})(City)
 

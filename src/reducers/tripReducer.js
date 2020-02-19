@@ -22,6 +22,16 @@ export default function tripReducer (state = {trips: []}, action) {
                 }
             })
             return {...state, trips: trips}
+         case 'ADD_LIKE':
+            let trips3 = state.trips.map(trip => {
+                if (trip.id === action.payload.id){
+                    return action.payload
+                }
+                else {
+                    return trip
+                }
+            })
+            return {...state, trips: trips3} 
         case 'DELETE_CITY':
             let trips2 = state.trips.map(trip => {
                 if (trip.id === action.payload.id){
