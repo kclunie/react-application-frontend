@@ -32,6 +32,7 @@ class TripsContainer extends React.Component{
 }
 
 const mapStateToProps = state => {
+    //console.log(state.trips)
     //console.log("mapStateToProps state is equal to", state)
     //console.log("global state in mapstate to props ", state.tripReducer.trips)
     return{
