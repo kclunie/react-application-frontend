@@ -3,7 +3,7 @@ import { updateNewTripForm } from '../actions/addTrip2'
 import { addTrip } from '../actions/addTrip2'
 import {connect} from 'react-redux'
 
-//built this file to show local state option - not using
+//built this file to show global state option - not using
 const TripInput2 = ({formData, updateNewTripForm, addTrip, history}) => {
 
     const { name, date } = formData
