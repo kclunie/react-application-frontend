@@ -15,7 +15,7 @@ const Trip = (props) => {
             {trip ? trip.name : null} - {trip ? trip.date : null}
         </h2>
         <CitiesContainer trip={trip}/>
-        {/* <TripEdit trip={trip}/> */}
+        <TripEdit trip={trip}/>
         </div>
     )
 }

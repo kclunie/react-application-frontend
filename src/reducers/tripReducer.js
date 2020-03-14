@@ -42,16 +42,16 @@ export default function tripReducer (state = {trips: []}, action) {
                 }
             })
             return {...state, trips: trips2}
-        // case 'EDIT_TRIP':
-        //     let trips4 = state.trips.map(trip => {
-        //         if (trip.id === action.payload.id){
-        //             return action.payload
-        //         }
-        //         else {
-        //             return trip
-        //         }
-        //     })
-        //     return {...state, trips: trips4} 
+        case 'EDIT_TRIP':
+            let trips4 = state.trips.map(trip => {
+                if (trip.id === action.payload.id){
+                    return action.payload
+                }
+                else {
+                    return trip
+                }
+            })
+            return {...state, trips: trips4} 
         default:
             return state
     }
