@@ -21,8 +21,8 @@ class TripEdit extends React.Component{
 
     handleSubmit = (event) => {
         event.preventDefault()
-        //let trip = {...this.state, id: this.props.trip.id}
-        this.props.editTrip(this.state)
+        let trip = {...this.state, id: this.props.trip.id}
+        this.props.editTrip(trip)
         console.log("trip edited")
         this.setState({
             name: '',
