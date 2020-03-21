@@ -24,7 +24,8 @@
 .NavBar {
   display: flex;
   flex-direction:row;  
-  color: green;
+  color: white;
+  position: sticky;
 }
 
 .HomeQuote {
