@@ -7,7 +7,7 @@ import Nav from 'react-bootstrap/Nav';
 const NavBar = () =>{
     return(
      <div className="NavBar">
-         <Container>
+         <Container fluid>
          <Navbar expand="lg" bg="dark" variant="dark">
          WhereInTheWorld  
          <Nav.Link className="NavBar2" href="/">Home</Nav.Link>
