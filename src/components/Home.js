@@ -20,13 +20,14 @@ const Home = () =>{
          <Container fluid>
             <Row className="ImageRow">
                 <Col>
-                    <Image className="ImageColumn" src="https://imgur.com/yEHvm4I.png" alt="lake" rounded/>
+                    <Image className="ImageColumn" src="https://imgur.com/JxKSy0O.png" alt="lake" rounded/>
+                    
                 </Col>
                 <Col>
                     <Image className="ImageColumn" src="https://imgur.com/yEHvm4I.png" rounded/>
                 </Col>
                 <Col>
-                    <Image className="ImageColumn" src="https://imgur.com/yEHvm4I.png" rounded/>
+                    <Image className="ImageColumn" src="https://imgur.com/amYE4fm.png" rounded/>
                 </Col>
             </Row>
         </Container>
