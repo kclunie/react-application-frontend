@@ -20,7 +20,7 @@ class Trips extends React.Component{
     return(
         <div>
             <br></br>
-            <h2>My Tripssss</h2>
+            <h2>My Trips</h2>
             <input type="text" name="name" value={this.state.name} onChange={(event) => this.updateSearch(event)}  placeholder="Search"></input>
             <br></br>
             {filteredTrips.map(trip => 
