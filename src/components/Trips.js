@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import Button from 'react-bootstrap/Button';
 
 //const Trips = (props) => {
 class Trips extends React.Component{
@@ -19,14 +20,15 @@ class Trips extends React.Component{
     const filteredTrips = this.props.trips.filter(trip => trip.name.includes(this.state.name))
     return(
         <div>
+
             <br></br>
             <h2>My Trips</h2>
             <input type="text" name="name" value={this.state.name} onChange={(event) => this.updateSearch(event)}  placeholder="Search"></input>
-            <br></br>
+            <br></br><br></br>
             {filteredTrips.map(trip => 
-            <li key={trip.id}>
-                <Link to={`/trips/${trip.id}`}>{trip.name}</Link>
-            </li>)}
+            <ul><Button variant="dark" key={trip.id}>
+                <Link to={`/trips/${trip.id}`}>{trip.name}<br></br></Link>
+            </Button></ul>)}
            
 
         </div>
