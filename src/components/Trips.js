@@ -22,13 +22,13 @@ class Trips extends React.Component{
         <div>
 
             <br></br>
-            <h2>My Trips</h2>
+            <h2 className="Title">Vacation Destination Scrap Book</h2>
             <input type="text" name="name" value={this.state.name} onChange={(event) => this.updateSearch(event)}  placeholder="Search"></input>
             <br></br><br></br>
             {filteredTrips.map(trip => 
-            <ul><Button variant="dark" key={trip.id}>
-                <Link to={`/trips/${trip.id}`}>{trip.name}<br></br></Link>
-            </Button></ul>)}
+            <li><Button variant="dark" key={trip.id}>
+                <Link className="TripList" to={`/trips/${trip.id}`}>{trip.name}<br></br></Link>
+            </Button><br></br><br></br></li>)}
            
 
         </div>
