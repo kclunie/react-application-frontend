@@ -11,9 +11,10 @@ const Trip = (props) => {
     
     return (
         <div>
-        <h2>
+        <br></br>
+        <h1 className="Title">
             {trip ? trip.name : null} - {trip ? trip.date : null}
-        </h2>
+        </h1>
         <CitiesContainer trip={trip}/>
         <TripEdit trip={trip}/>
         </div>
