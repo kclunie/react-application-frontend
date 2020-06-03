@@ -34,7 +34,7 @@ class TripEdit extends React.Component{
         return (
             <div>
                 <br></br>
-                <h2>Edit My Trip</h2>
+                <h3>Edit My Trip</h3>
                 <form onSubmit={this.handleSubmit}>
                     <br></br>
                     <Form.Group as={Row}>
