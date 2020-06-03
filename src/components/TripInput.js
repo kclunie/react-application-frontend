@@ -33,7 +33,7 @@ class TripInput extends React.Component{
         return (
             <div>
                 <br></br>
-                <h2>Add a Trip</h2>
+                <h1 className="Title">Add a Trip</h1>
                 <form onSubmit={this.handleSubmit}>
                     <br></br>
                     <Form.Group as={Row}>
