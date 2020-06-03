@@ -35,7 +35,7 @@ import City from './City'
     return(
         <div>
             <br></br><br></br>
-            <h3 className="CitiesExplored">Cities Explored</h3>
+            <h3 className="CitiesExplored">Trip Destinations</h3>
             <br></br>
             {this.props.cities && this.props.cities.map(city =>
             <div key={city.id}>
