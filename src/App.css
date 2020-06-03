@@ -22,6 +22,7 @@
 }
 
 .NavBar {
+  font-family: palatino;
   display: flex;
   flex-direction:row;  
   color: rgb(146, 197, 245);
@@ -35,6 +36,16 @@
 .Title {
   font-family: palatino;
   font-weight: bold;
+}
+
+h1, h2, h3, h4 {
+  font-family: palatino;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, div, p, li, ul, ol {
+  font-family: palatino;
 }
 
 .HomeQuote {
