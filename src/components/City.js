@@ -46,8 +46,8 @@ class City extends React.Component{
     return (
         <div>
     
-           <strong>{this.props.city.location}</strong>
-            <br></br> Hotel: {this.props.city.hotel}
+           <h5><strong className="citiestitle">{this.props.city.location}</strong></h5>
+            Hotel: {this.props.city.hotel}
             <br></br> Restaurants: {this.props.city.restaurants} 
             <br></br> Activities: {this.props.city.activities} 
             <br></br>  
