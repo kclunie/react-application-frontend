@@ -51,7 +51,7 @@ class TripEdit extends React.Component{
                     </Col>
                     </Form.Group>
 
-                    <Button type="submit" variant="primary">Submit</Button><br></br>
+                    <Button type="submit" variant="primary">Update</Button><br></br>
 
                 </form>
             </div>
