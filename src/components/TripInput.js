@@ -5,6 +5,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import Alert from 'react-bootstrap/Alert'
 
 class TripInput extends React.Component{
 
@@ -23,10 +24,15 @@ class TripInput extends React.Component{
         event.preventDefault()
         this.props.addTrip(this.state)
         console.log("trip added", this.state)
+        this.myFunction()
         this.setState({
             name: '',
             date: ''
         })
+    }
+
+    myFunction() {
+        alert("Your trip is being added!")
     }
 
     render(){
@@ -50,7 +56,7 @@ class TripInput extends React.Component{
                     </Col>
                     </Form.Group>
 
-                    <Button type="submit" variant="primary">Submit</Button><br></br>
+                    <Button type="submit" onclick="myFunction()" variant="primary">Submit</Button><br></br>
 
                 </form>
             </div>
