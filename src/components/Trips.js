@@ -20,8 +20,8 @@ class Trips extends React.Component{
     const filteredTrips = this.props.trips.filter(trip => trip.name.includes(this.state.name))
     return(
         <div className="Background">
-
-            <br></br>
+            
+            <br></br><br></br><br></br>
             <h1 className="Title">Vacation Destinations</h1>
             <input type="text" name="name" value={this.state.name} onChange={(event) => this.updateSearch(event)}  placeholder="Search"></input>
             <br></br><br></br>
