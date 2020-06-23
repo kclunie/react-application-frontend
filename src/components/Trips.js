@@ -19,7 +19,7 @@ class Trips extends React.Component{
         //debugger
     const filteredTrips = this.props.trips.filter(trip => trip.name.includes(this.state.name))
     return(
-        <div>
+        <div className="Background">
 
             <br></br>
             <h1 className="Title">Vacation Destinations</h1>
