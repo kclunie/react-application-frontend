@@ -53,7 +53,7 @@ class City extends React.Component{
             <br></br>  
             <Button variant="dark" onClick={() => this.props.handleDelete(this.props.city)}>Delete</Button>
             <Button id="myH2" className="like" variant="secondary" name='like' value={this.state.like} onClick={(e) => this.handleClick(e)} >Like</Button><br></br><br></br>
-            {this.state.like ? <h1>LOVE</h1> : null}
+            {/* {this.state.like ? <h1>LOVE</h1> : null} */}
             {/*this.state.like ? this.redButton() : null*/}
         
         </div>
