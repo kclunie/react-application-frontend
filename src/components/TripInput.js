@@ -38,7 +38,7 @@ class TripInput extends React.Component{
     render(){
         return (
             <div>
-                <br></br>
+                <br></br><br></br><br></br>
                 <h1 className="Title">Add a Trip</h1>
                 <form onSubmit={this.handleSubmit}>
                     <br></br>
