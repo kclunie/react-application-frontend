@@ -7,8 +7,8 @@ import Nav from 'react-bootstrap/Nav';
 const NavBar = () =>{
     return(
      <div className="NavBar">
-         <Container fluid>
-         <Navbar expand="lg" bg="dark" variant="dark">
+         {/* <Container fluid> */}
+         <Navbar fixed="top" expand="lg" bg="dark" variant="dark">
          WhereInTheWorld  
          <Nav.Link className="NavBar2" href="/">Home</Nav.Link>
          <Nav.Link className="NavBar2" href="/trips">My Trips</Nav.Link>
@@ -17,7 +17,7 @@ const NavBar = () =>{
          <NavLink className="NavBar2" to="/trips">My Trips</NavLink>
          <NavLink className="NavBar2" to="/trips/new"> New Trip  |  </NavLink> */}
          </Navbar>
-         </Container>
+         {/* </Container> */}
      </div>   
     )
 }
