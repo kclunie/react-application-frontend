@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import Button from 'react-bootstrap/Button';
+// import TripEdit from './TripEdit'
 
 //const Trips = (props) => {
 class Trips extends React.Component{
@@ -28,7 +29,10 @@ class Trips extends React.Component{
             {filteredTrips.map(trip => 
             <li><Button variant="dark" key={trip.id}>
                 <Link className="TripList" to={`/trips/${trip.id}`}>{trip.name}<br></br></Link>
-            </Button><br></br><br></br></li>)}
+            </Button>
+            {/* <Button><TripEdit trip={trip}/></Button> */}
+            <br></br><br></br></li>)
+            }
 
         </div>
     )
