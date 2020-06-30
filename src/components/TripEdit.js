@@ -35,25 +35,27 @@ class TripEdit extends React.Component{
             <div>
                 <br></br>
                 <h3>Edit My Trip</h3>
+                <Button>
                 <form onSubmit={this.handleSubmit}>
                     <br></br>
                     <Form.Group as={Row}>
                     <Form.Label column sm="2">Trip Name:</Form.Label>
                     <Col sm="9">
-                    <Form.Control type='text' placeholder='Name' value={this.state.name} name="name" onChange={this.handleChange}></Form.Control><br/>
+                    <Form.Control size="sm" type='text' placeholder='Name' value={this.state.name} name="name" onChange={this.handleChange}></Form.Control><br/>
                     </Col>
                     </Form.Group>
 
                     <Form.Group as={Row}>
                     <Form.Label column sm="2">Date:</Form.Label>
                     <Col sm="9">
-                    <Form.Control type='text' placeholder='Date' value={this.state.date} name="date" onChange={this.handleChange}></Form.Control><br/>
+                    <Form.Control size="sm" type='text' placeholder='Date' value={this.state.date} name="date" onChange={this.handleChange}></Form.Control><br/>
                     </Col>
                     </Form.Group>
 
                     <Button type="submit" variant="primary">Update</Button><br></br>
 
                 </form>
+                </Button>
             </div>
         )
     }
