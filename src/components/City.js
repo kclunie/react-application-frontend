@@ -2,6 +2,7 @@ import React from 'react'
 import Button from 'react-bootstrap/Button';
 import {connect} from 'react-redux'
 import {addLike} from '../actions/addLike'
+import Form from 'react-bootstrap/Form'
 
 //const City = (props) => {
 class City extends React.Component{
@@ -55,7 +56,11 @@ class City extends React.Component{
             <Button id="myH2" className="like" variant="secondary" name='like' value={this.state.like} onClick={(e) => this.handleClick(e)} >Like</Button><br></br><br></br>
             {/* {this.state.like ? <h1>LOVE</h1> : null} */}
             {/*this.state.like ? this.redButton() : null*/}
-        
+            {/* <Form>
+                <Form.Group>
+                    <Form.File id="exampleFormControlFile1" label="Example file input" />
+                </Form.Group>
+            </Form> */}
         </div>
     )
 }
