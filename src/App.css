@@ -107,3 +107,13 @@ h1, h2, h3, h4, div, p, li, ul, ol {
     background-size: cover;
     background-position: center;
 }
+
+.AddaTrip {
+  background-color: darkorange;
+  border: 1px solid white;
+  width: 300px;
+  height: 75px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 10px;
+}
