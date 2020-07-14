@@ -100,3 +100,10 @@ h1, h2, h3, h4, div, p, li, ul, ol {
     background-position: center;
 }
 
+.BackgroundNew
+{
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url(https://i.imgur.com/NpfoiKO.png);
+    height: 200vh;
+    background-size: cover;
+    background-position: center;
+}
