@@ -37,9 +37,9 @@ class TripInput extends React.Component{
 
     render(){
         return (
-            <div>
+            <div className="BackgroundNew">
                 <br></br><br></br><br></br>
-                <h1 className="Title">Add a Trip</h1>
+                <h1 className="Title" className="AddaTrip">Add a Trip</h1>
                 <form onSubmit={this.handleSubmit}>
                     <br></br>
                     <Form.Group as={Row}>
