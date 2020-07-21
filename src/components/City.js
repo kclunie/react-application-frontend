@@ -8,7 +8,8 @@ import Form from 'react-bootstrap/Form'
 class City extends React.Component{
 
     state = {
-        like: false
+        like: false,
+        likes: 0
     }
 
     // constructor() {
@@ -18,6 +19,15 @@ class City extends React.Component{
     //     };
     //     this.handleClick = this.handleClick.bind(this);
     //   } 
+
+    like = () => {
+        document.getElementById("show").innerHTML=(this.state.likes);
+       // likes=likes+1;
+       this.setState({
+        //like: !(this.state.like)
+        likes: (this.state.likes) + 1
+    })
+   }
 
       handleClick = (e) => {
         console.log("you have liked this trip")
@@ -51,7 +61,11 @@ class City extends React.Component{
             Hotel: {this.props.city.hotel}
             <br></br> Restaurants: {this.props.city.restaurants} 
             <br></br> Activities: {this.props.city.activities} 
-            <br></br>  
+            <br></br> 
+            Likes: {this.state.likes}
+            <br></br> 
+            <Button id="button" onclick="like()">Like</Button>
+            <br></br> 
             <Button variant="dark" onClick={() => this.props.handleDelete(this.props.city)}>Delete</Button>
             <Button id="myH2" className="like" variant="secondary" name='like' value={this.state.like} onClick={(e) => this.handleClick(e)} >Like</Button><br></br><br></br>
             {/* {this.state.like ? <h1>LOVE</h1> : null} */}
