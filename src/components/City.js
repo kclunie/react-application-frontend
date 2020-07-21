@@ -21,12 +21,12 @@ class City extends React.Component{
     //   } 
 
     like = () => {
-        document.getElementById("show").innerHTML=(this.state.likes);
-       // likes=likes+1;
-       this.setState({
-        //like: !(this.state.like)
-        likes: (this.state.likes) + 1
-    })
+        console.log("button pushed")
+        const newCount = this.state.likes + 1
+        this.setState({
+          likes: newCount
+        })
+        console.log(this.state.likes)
    }
 
       handleClick = (e) => {
@@ -64,7 +64,7 @@ class City extends React.Component{
             <br></br> 
             Likes: {this.state.likes}
             <br></br> 
-            <Button id="button" onclick="like()">Like</Button>
+            <Button id="button" onClick={(e) => this.like(e)}>Like</Button>
             <br></br> 
             <Button variant="dark" onClick={() => this.props.handleDelete(this.props.city)}>Delete</Button>
             <Button id="myH2" className="like" variant="secondary" name='like' value={this.state.like} onClick={(e) => this.handleClick(e)} >Like</Button><br></br><br></br>
