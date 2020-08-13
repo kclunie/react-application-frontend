@@ -1,6 +1,7 @@
 import React from 'react'
 import CitiesContainer from '../containers/CitiesContainer'
 import TripEdit from './TripEdit'
+import Likes from './Likes'
 
 const Trip = (props) => {
     console.log("trip component props are", props)
@@ -15,6 +16,7 @@ const Trip = (props) => {
         <h1 className="Title">
             {trip ? trip.name : null} - {trip ? trip.date : null}
         </h1>
+        <Likes trip={trip}/>
         <TripEdit trip={trip}/>
         <CitiesContainer trip={trip}/>
         </div>
