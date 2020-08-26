@@ -23,6 +23,7 @@ export default function tripReducer (state = {trips: []}, action) {
             })
             return {...state, trips: trips}
          case 'ADD_LIKE':
+            console.log("reducer ADD_Like action is", action)
             let trips3 = state.trips.map(trip => {
                 if (trip.id === action.payload.id){
                     return action.payload
