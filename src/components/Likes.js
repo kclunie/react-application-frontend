@@ -18,7 +18,8 @@ class Likes extends React.Component {
           count: newCount
         });
         this.props.addLike(this.state, this.props.trip.id)
-        console.log("like added", this.state)
+        console.log("like added state is", this.state)
+        console.log("like added trip id is", this.props.trip.id)
       };
 
     render() {
@@ -36,8 +37,8 @@ class Likes extends React.Component {
                     </Col>
                     </Form.Group>
 
-                    <Button type="submit" variant="primary">Submit</Button><br></br>
-
+                    <Button type="submit" variant="primary">Like Me</Button><br></br>
+                    <button type="submit" onClick={this.addLikee} name='count' value={this.state.count}>Likes: {this.state.count} </button>
                 </form> */}
           </div> 
           )
