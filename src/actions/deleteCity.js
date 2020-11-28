@@ -1,7 +1,8 @@
 export const deleteCity = (cityId, tripId) => {
     console.log("c")
     return (dispatch) => {
-       return fetch(`http://localhost:3000/api/v1/trips/${tripId}/cities/${cityId}`, {
+        // return fetch(`http://localhost:3000/api/v1/trips/${tripId}/cities/${cityId}`, {
+        return fetch(`https://trips-backend.herokuapp.com/api/v1/trips/${tripId}/cities/${cityId}`, {
             method: 'DELETE'
         })
         .then(response => {
