@@ -12,34 +12,53 @@ class Likes extends React.Component {
         count: 0
       };
 
-      addLikee = () => {
-        let newCount = this.state.count + 1;
-          this.setState({
-          count: newCount
-        });
-        this.props.addLike(this.state, this.props.trip.id)
-        console.log("like added state is", this.state)
-        console.log("like added trip id is", this.props.trip.id)
-      };
+      handleChange = (event) => {
+        this.setState({
+            [event.target.name]: event.target.value
+        })
+        console.log("the state now is", this.state)
+    }
+
+    handleSubmit = (event) => {
+      event.preventDefault()
+      this.props.addLike(this.state, this.props.trip.id)
+      // this.setState({
+      //     location: ''
+      // })
+      console.log("like added state is", this.state)
+      console.log("like added trip id is", this.props.trip.id)
+  }
+
+      // addLikee = () => {
+      //   // let newCount = this.state.count + 1;
+      //   //   this.setState({
+      //   //   count: newCount
+      //   // });
+      //   // console.log("state is now", this.state)
+      //   this.props.addLike(this.state, this.props.trip.id)
+      //   console.log("like added state is", this.state)
+      //   console.log("like added trip id is", this.props.trip.id)
+      // };
 
     render() {
     
           return (
           <div>
               <br></br>
-          <button onClick={this.addLikee} name='count' value={this.state.count}>Likes: {this.state.count} </button>
+          {/* <button onClick={this.addLikee} name='count' value={this.state.count}>Likes: {this.state.count} </button> */}
           <br></br>
-          {/* <form onSubmit={this.handleSubmit}>
+          <form onSubmit={this.handleSubmit}>
                     <Form.Group as={Row}>
-                    <Form.Label column sm="2">Location:</Form.Label>
-                    <Col sm="9">
-                    <Form.Control type='text' name='location' value={this.state.location} onChange={this.handleChange}></Form.Control> 
+                    <Form.Label column sm="2">Rate Me:</Form.Label>
+                    <Col sm="2">
+                    <Form.Control type='text' name='count' value={this.state.count} onChange={this.handleChange}></Form.Control> 
                     </Col>
                     </Form.Group>
 
                     <Button type="submit" variant="primary">Like Me</Button><br></br>
-                    <button type="submit" onClick={this.addLikee} name='count' value={this.state.count}>Likes: {this.state.count} </button>
-                </form> */}
+                    {/* <button type="submit" onClick={this.addLikee} name='count' value={this.state.count}>Likes: {this.state.count} </button> */}
+                </form>
+                <h3>{this.state.count} Stars!</h3>
           </div> 
           )
       }
