@@ -31,6 +31,8 @@ class CityInput extends React.Component{
             restaurants: '',
             activities: ''
         })
+        console.log("city added state is", this.state)
+        console.log("city added trip id is", this.props.trip.id)
     }
 
     render(){
