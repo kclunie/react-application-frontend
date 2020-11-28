@@ -1,7 +1,8 @@
 export const addCity = (city, tripId) => {
     console.log(city, tripId)
     return (dispatch) => {
-        fetch(`http://localhost:3000/api/v1/trips/${tripId}/cities`, {
+        // fetch(`http://localhost:3000/api/v1/trips/${tripId}/cities`, {
+        fetch(`https://trips-backend.herokuapp.com/api/v1/trips/${tripId}/cities`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
