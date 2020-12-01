@@ -14,7 +14,7 @@ const Trip = (props) => {
         <div>
         <br></br><br></br><br></br>
         <h1 className="Title">
-            {trip ? trip.name : null} - {trip ? trip.date : null}
+            {trip ? trip.name : null} - {trip ? trip.date : null} 
         </h1>
         <Likes trip={trip}/>
         <TripEdit trip={trip}/>
