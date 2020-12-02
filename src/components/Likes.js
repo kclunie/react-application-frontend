@@ -58,7 +58,7 @@ class Likes extends React.Component {
                     <Button type="submit" variant="primary">Like Me</Button><br></br>
                     {/* <button type="submit" onClick={this.addLikee} name='count' value={this.state.count}>Likes: {this.state.count} </button> */}
                 </form>
-                <h3>{this.state.count} Stars!</h3>
+                {/* <h3>{this.state.count} Stars!</h3> */}
           </div> 
           )
       }
