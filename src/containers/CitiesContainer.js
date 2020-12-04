@@ -1,7 +1,7 @@
 import React from 'react'
 import CityInput from '../components/CityInput'
 import Cities from '../components/Cities'
-import Likes from '../components/Likes'
+import LikesInput from '../components/LikesInput'
 import City from '../components/City'
 
 class CitiesContainer extends React.Component{
