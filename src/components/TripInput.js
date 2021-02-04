@@ -66,7 +66,7 @@ class TripInput extends React.Component{
 }
 
 const mapStateToProps = state => {
-   // debugger;
+   // debugger; check what trips equals here
     return{
         trips: state.trips
     }
